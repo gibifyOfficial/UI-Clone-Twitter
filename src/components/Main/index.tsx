@@ -20,11 +20,11 @@ const Main: React.FC = () => {
         <button>
           <BackIcon />
         </button>
-
+      
         <ProfileInfo>
           <strong>Evandro Gibicoski</strong>
           <span>630 Tweets</span>
-          </ProfileInfo>
+        </ProfileInfo>
       </Header>
 
       <ProfilePage />

@@ -52,6 +52,7 @@ export const ProfileData = styled.div`
   > h2 {
     font-weight: normal;
     font-size: 15px;
+    color: var(--gray);
   }
   > p {
     font-size: 15px;
@@ -68,9 +69,6 @@ export const ProfileData = styled.div`
     margin-bottom: 10px;
 
     > li {
-      display:flex;
-      align-items: center;
-
       font-size: 15px;
       color: var(--gray);
       
