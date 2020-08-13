@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Button from '../Button';
 import { 
   Container,
   TopSide,
@@ -10,9 +9,14 @@ import {
   BellIcon,
   EmailIcon,
   FavoriteIcon,
-  ProfileIcon
- } from './styles';
+  ProfileIcon,
+  Botside,
+  Avatar,
+  ProfileData,
+  ExitIcon,
+} from './styles';
 
+import Button from '../Button';
 const MenuBar: React.FC = () => {
   return (
     <Container>
@@ -49,6 +53,17 @@ const MenuBar: React.FC = () => {
         </Button>
 
       </TopSide>
+
+      <Botside >
+        <Avatar />
+
+        <ProfileData>
+          <strong>Evandro Gibicoski</strong>
+          <span>@gibidy_official</span>
+        </ProfileData>
+
+        <ExitIcon />
+      </Botside>
     </Container>
   )
 }

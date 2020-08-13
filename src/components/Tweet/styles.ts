@@ -106,7 +106,7 @@ export const Icons = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 11px auto 00;
+  margin: 11px auto 0;
   width: 100%;
   
   @media (min-width: 330px) {
@@ -134,7 +134,7 @@ export const Status = styled.div`
   &:nth-child(1) {
     &,
     > svg path {
-      color: --(gray);
+      color: var(--gray);
     }
   }
   &:nth-child(2) {

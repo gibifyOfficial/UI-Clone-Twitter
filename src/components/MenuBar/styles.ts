@@ -17,6 +17,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     position: sticky;
     top: 0;
     left: 0;
@@ -33,7 +34,7 @@ export const TopSide = styled.div`
     align-items: flex-start;
   }
 `;
-export const Logo = styled.div`
+export const Logo = styled(Rocketseat)`
   width: 41px;
   height: 41px;
   > path {
@@ -41,8 +42,8 @@ export const Logo = styled.div`
   }
   margin-bottom: 20px;
 `;
-export const MenuButton = styled.div`
- display: flex;
+export const MenuButton = styled.button`
+  display: flex;
   align-items: center;
   flex-shrink: 0;
   > span {
@@ -91,12 +92,41 @@ export const MenuButton = styled.div`
     }
   }
 `;
+export const Botside = styled.div`
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+`;
+export const Avatar = styled.div`
+  width: 39px;
+  height: 39px;
+
+  flex-shrink: 0;
+
+`;
+export const ProfileData = styled.div`
+  display: flex;
+
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 10px;
+    font-size: 14px;
+
+    >span {
+      color: var(--gray);
+    }
+  }
+`;
+
 
 const iconCSS = css`
   flex-shrink: 0;
   
-  width: 15px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
   color: var(--white);
 
 `;
@@ -111,3 +141,24 @@ const iconCSS = css`
   ${iconCSS}`;
   export const ProfileIcon = styled(Person)`
   ${iconCSS}`;
+
+
+  export const ExitIcon = styled(ExitToApp)`
+    display: none;
+
+    @media (min-width: 1280px) {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      color: var(--white);
+      margin-left: 30px;
+      cursor: pointer;
+
+      &:hover {
+        > path {
+          color: var(--like);
+        }
+      }
+    };
+
+`;

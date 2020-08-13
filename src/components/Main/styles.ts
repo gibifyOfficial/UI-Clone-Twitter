@@ -26,7 +26,7 @@ export const  Header = styled.div`
   display: flex;
   align-items: center;
 
-  text-align: center;
+  text-align: left;
   padding: 8px 0 9px 13px;
   border-bottom: 1px solid var(--outline);
 
